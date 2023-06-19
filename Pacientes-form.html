@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FORMULARIO DE PACIENTES</title>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.33/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="Pacientes.html">PACIENTES</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="Doctores.html">DOCTORES</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="card m-3">
+        <div class="card-header">
+            FORMULARIO DE PACIENTE
+        </div>
+        <div class="card-body">
+            <form id="frmPaciente">
+                <div class="form-group">
+                    <label for="txtIdPaciente">IDPACIENTE</label>
+                    <input type="text" class="form-control" id="txtIdPaciente" value="0" readonly />
+                </div>
+                <div class="form-group">
+                    <label for="txtNombre">NOMBRES Y PALLIDOS</label>
+                    <input type="text" class="form-control" id="txtNombre"/>
+                </div>
+                <div class="form-group">
+                    <label for="txtCc">NUMERO DE DOCUMENTO</label>
+                    <input type="text" class="form-control" id="txtCc"/>
+                </div>
+                <div class="form-group">
+                    <label for="txtTel">TELEFONO</label>
+                    <input type="text" class="form-control" id="txtTel"/>
+                </div>
+                <div class="form-group">
+                    <label for="txtDireccion">DIRECCION</label>
+                    <input type="text" class="form-control" id="txtDireccion"/>
+                </div>
+                <div class="form-group">
+                    <label for="cboEstado">ESTADO</label>
+                    <select class="form-control"  id="cboEstado">
+                        <option >ACTIVO</option>
+                        <option >INACTIVO</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer">
+            <button type="button" class="btn btn-success" onclick="guardar()">
+                GUARDAR
+            </button>
+            <a href="Pacientes.html" class="btn btn-danger">CANCELAR</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="Pacientes-form.js" type="text/JavaScript"></script>
