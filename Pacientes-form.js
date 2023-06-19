@@ -51,7 +51,7 @@ function guardar() {
 
       Swal.fire('Cambios Guardados','','success').then(
         (result)=>{
-          window.location.replace('Pacientes.html'); 
+          window.location.replace('index.html'); 
         }
       );
       
